@@ -1,0 +1,48 @@
+.new-item {
+	width: 50%;
+	padding: 0 10px;
+}
+
+
+.item-info {
+	top: auto;
+	bottom: 0px;
+	height: 3.75em;
+	background: rgba(255, 255, 255, .8);
+	color: rgb(60, 74, 80);
+	-webkit-transition: all 500ms ease 1s;
+	transition: all 500ms ease 1s;
+	-webkit-transform: translate3d(0px, 0, 0px);
+	transform: translate3d(0px, 0, 0px);
+	z-index: 10;
+	display: none;
+
+}
+
+.new-item:hover .item-info {
+	display: block;
+	-webkit-transform: translate3d(0px, -80%, 0px);
+	transform: translate3d(0px, -80%, 0px);
+
+}
+
+.item-info .title {
+	font-weight: 700;
+}
+
+.item-info .author-artist {
+	font-transform: uppercase;
+	font-variant: small-caps;
+	padding:0 0 0 3px;
+}
+
+.tabs .tab-title {
+	border: 1px solid #ddd;
+  	margin: 0 5px;
+  	max-width: 30%;
+
+  	>a {
+  		padding: .75rem 1.5rem; 
+  	}
+}
+  

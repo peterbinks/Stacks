@@ -1,0 +1,77 @@
+header#masthead {
+	margin: 0 0 6em 0;
+	background-color:#665079;
+	color: #ddd;
+	border-bottom: 2px solid #54386E;
+	a {
+		color: #ddd;
+
+		&:hover {
+			color:#fff;
+		}
+	}
+}
+
+
+
+h1.site-title {
+	display: inline-block;
+	max-width: 50%;
+	font-weight: 700;
+	padding: 0 0 0 15px;
+}
+
+form.swan-search.form-inline {
+	display: inline-block;
+	float: right;
+	width: 100%;
+}
+
+
+.header-info {
+	width: 100%;
+	clear: both;
+	display: block;
+	text-align: right;
+	padding: 5px 50px;
+	background-color: rgb(84, 56, 110);
+
+
+		p {
+		display: inline-block;
+		margin: 0;
+		}
+
+		address {
+		display: inline-block;
+		}
+
+}
+
+.form-group {
+	margin:0;
+}
+
+.header-links {
+	margin: 1.5em auto;
+}
+
+.social-media a {
+	padding: 1em;
+}
+
+.logins {
+	margin: 1.5em 0 0;
+		
+		a {
+		margin: 0 1em 0 0;
+	}
+}
+
+.orange-btn {
+	background-color: #BE4C00;
+	
+	&:hover {
+		background-color: lighten(#BE4C00, 10%);
+	}
+}

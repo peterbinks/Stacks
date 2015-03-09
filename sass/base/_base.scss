@@ -1,0 +1,47 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { 
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #fffff; 
+}
+
+blockquote, q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+hr {
+	background-color: #555;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+@import "table";
+
+img {
+	height: auto; 
+	max-width: 100%; 
+}
+
+
+a {
+	color: #665079;
+
+	&:hover {
+		color: #54386E;
+	}
+}

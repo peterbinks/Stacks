@@ -1,0 +1,35 @@
+.button {
+	background-color: #84689E;
+	border-color: #5F4379;
+
+	&:hover, &:active, &:focus {
+		background-color: darken(#84689E, 10%);
+		border-color: darken(#5F4379, 10%);
+	}
+}
+
+
+.darkblue-btn {
+	background-color: #181648;
+	
+	&:hover, &:active, &:focus {
+		background-color: darken(#181648, 10%);
+	}
+}
+
+.twitter-btn {
+	background-color: #55acee;
+
+	&:hover, &:active, &:focus {
+		background-color: darken(#55acee, 10%);
+	}
+}
+
+.facebook-btn {
+	background-color: #3b5998;
+
+	&:hover, &:active, &:focus {
+		background-color: darken(#3b5998, 10%);
+	}
+
+}
