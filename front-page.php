@@ -109,7 +109,7 @@
 				<div class="cover-image">
 					
 					<img src="<?php the_field('cover_image'); ?>" />
-
+					<!--
 					<div class="item-info">
 					<div class="title">
 						<span class="item-title"><?php the_title(); ?></span>
@@ -119,7 +119,7 @@
 		                <span><?php the_field('author_artist'); ?></span>
 					</div>
 					</div>
-
+					-->
 				</div>
 
 				
@@ -131,7 +131,83 @@
 		<?php wp_reset_postdata(); ?>
 
 		<?php else : ?>
-		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+		<p><?php _e( 'Sorry, no new books at this time.' ); ?></p>
+	<?php endif; ?>
+			
+	</div>
+
+	<div class="content" id="albums">
+	<?php $the_query = new WP_Query(array('post_type' => 'new_albums', 'posts_per_page'=> 6, ) ); ?>
+
+	<?php if ( $the_query->have_posts() ) : ?>
+
+		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		<div class="new-item">
+
+				<div class="cover-image">
+					
+					<img src="<?php the_field('cover_image'); ?>" />
+					<!--
+					<div class="item-info">
+					<div class="title">
+						<span class="item-title"><?php the_title(); ?></span>
+					</div>
+	            
+					<div class="author-artist">
+		                <span><?php the_field('author_artist'); ?></span>
+					</div>
+					</div>
+					-->
+				</div>
+
+				
+	    </div>
+	            <div class="clear"></div>
+
+	    <?php endwhile; ?>
+
+		<?php wp_reset_postdata(); ?>
+
+		<?php else : ?>
+		<p><?php _e( 'Sorry, new albums at this time.' ); ?></p>
+	<?php endif; ?>
+			
+	</div>
+
+	<div class="content" id="movies">
+	<?php $the_query = new WP_Query(array('post_type' => 'new_movies', 'posts_per_page'=> 6, ) ); ?>
+
+	<?php if ( $the_query->have_posts() ) : ?>
+
+		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		<div class="new-item">
+
+				<div class="cover-image">
+					
+					<img src="<?php the_field('cover_image'); ?>" />
+					<!--
+					<div class="item-info">
+					<div class="title">
+						<span class="item-title"><?php the_title(); ?></span>
+					</div>
+	            
+					<div class="author-artist">
+		                <span><?php the_field('author_artist'); ?></span>
+					</div>
+					</div>
+					-->
+				</div>
+
+				
+	    </div>
+	            <div class="clear"></div>
+
+	    <?php endwhile; ?>
+
+		<?php wp_reset_postdata(); ?>
+
+		<?php else : ?>
+		<p><?php _e( 'Sorry, no new movies at this time.' ); ?></p>
 	<?php endif; ?>
 			
 	</div>
